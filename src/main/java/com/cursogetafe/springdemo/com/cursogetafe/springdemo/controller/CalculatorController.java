@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 public class CalculatorController {
     @GetMapping("/calculator")
     public String sumar(Model model, @RequestParam int s1, @RequestParam int s2){
+//      Para pasar los parametros desde el navegador escriniremos: http://localhost:8080/calculator?s1=3&s2=5
         int suma = s1 + s2;
         // "suma" es la clave que usaremos en el HTML
         model.addAttribute("sumaTotal", suma);

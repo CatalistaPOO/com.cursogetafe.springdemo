@@ -13,6 +13,8 @@ public class CalculatorController {
         int suma = s1 + s2;
         // "suma" es la clave que usaremos en el HTML
         model.addAttribute("sumaTotal", suma);
+        model.addAttribute("n1", s1);
+        model.addAttribute("n2", s2);
 
         // DEBE coincidir con el nombre del archivo en /templates
         return "calculator";

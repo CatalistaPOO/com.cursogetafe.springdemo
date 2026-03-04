@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
 </head>
 <body>
-    <h1 th:text="${sumaTotal}">Resultado de suma</h1>
+<!--Opción A (Sustitución literal - Recomendada): Usar las "barras verticales" (|) para envolver todo. -->
+    <h1 th:text="|${n1} + ${n2} = ${sumaTotal}|">Resultado de suma</h1>
+<!--Opción B (Concatenación clásica): Usar comillas simples para el texto y el signo + para unir las partes.-->
+<!--    <h1 th:text="${n1} + ' + ' + ${n2} + ' = ' + ${sumaTotal}">Resultado de suma</h1>-->
 </body>
 </html>
